@@ -4,33 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>New Tab</title>
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
   <style>
     body, html {
       margin: 0;
       padding: 0;
+      width: 100%;
       background-color: rgb(26, 26, 26);
 
-      /* font-family: "Roboto", serif;
+      font-family: "Roboto", serif;
       font-optical-sizing: auto;
       font-weight: 400;
       font-style: normal;
       font-variation-settings:
-        "wdth" 100; */
+        "wdth" 100;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: flex-start;
       align-content: center;
       gap: 1em;
       min-height: calc(100svh - 2em);
       height: 100%;
+      width: 100%;
       max-width: 1200px;
       margin: auto;
       padding: 1em;
@@ -42,6 +48,7 @@
       border-radius: 1em;
       padding: 1em;
       transition: background-color 300ms ease;
+      text-decoration: none;
     }
 
     .container > .link:hover,
@@ -53,6 +60,19 @@
     .container > .link > svg {
       height: 96px;
       width: auto;
+    }
+
+    .container > .link .link__placeholder-letter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 4em;
+
+      width: 100%;
+      height: 96px;
+      width: auto;
+      aspect-ratio: 1/1;
     }
   </style>
   <div class="container">
@@ -87,6 +107,13 @@
     <a href="https://www.cosmos.so/" class="link">
       <img src="https://www.cosmos.so/android-chrome-192x192.png" alt="Cosmos icon">
     </a>
+
+    <a href="https://public.work/" class="link">
+      <div class="link__placeholder-letter">
+        <span>P</span>
+      </div>
+    </a>
+
   </div>
 </body>
 </html>
