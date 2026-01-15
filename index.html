@@ -13,6 +13,7 @@
     body, html {
       margin: 0;
       padding: 0;
+      width: 100%;
       background-color: rgb(26, 26, 26);
 
       font-family: "Roboto", serif;
@@ -21,16 +22,21 @@
       font-style: normal;
       font-variation-settings:
         "wdth" 100;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: flex-start;
       align-content: center;
       gap: 1em;
-      min-height: 100svh;
+      min-height: calc(100svh - 2em);
       height: 100%;
+      width: 100%;
       max-width: 1200px;
       margin: auto;
       padding: 1em;
@@ -42,6 +48,7 @@
       border-radius: 1em;
       padding: 1em;
       transition: background-color 300ms ease;
+      text-decoration: none;
     }
 
     .container > .link:hover,
@@ -54,8 +61,25 @@
       height: 96px;
       width: auto;
     }
+
+    .container > .link .link__placeholder-letter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 4em;
+
+      width: 100%;
+      height: 96px;
+      width: auto;
+      aspect-ratio: 1/1;
+    }
   </style>
   <div class="container">
+      <a href="https://www.youtube.com" class="link">
+      <img src="https://www.youtube.com/s/desktop/16fc047a/img/favicon_144x144.png" alt="YouTube icon">
+    </a>
+
     <a href="https://mail.google.com" class="link">
       <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Gmail icon">
     </a>
@@ -68,6 +92,34 @@
       <img src="https://www.gstatic.com/calendar/images/manifest/logo_2020q4_512.png" alt="Google Calendar icon">
     </a>
 
+    <a href="https://www.notion.so" class="link">
+      <img src="https://www.notion.so/images/logo-ios.png" alt="Notion icon">
+    </a>
+
+    <a href="https://chatgpt.com" class="link">
+      <img src="https://chatgpt.com/cdn/assets/favicon-180x180-od45eci6.webp" alt="ChatGPT icon">
+    </a>
+
+    <a href="https://gemini.google.com/u/1/app" class="link">
+      <img src="https://www.gstatic.com/lamda/images/gemini_sparkle_4g_512_lt_f94943af3be039176192d.png" alt="Gemini icon">
+    </a>
+
+    <a href="https://claude.ai" class="link">
+      <img src="https://claude.ai//images/claude_app_icon.png" alt="Claude AI icon">
+    </a>
+
+    <a href="https://chat.mistral.ai/chat" class="link">
+      <img src="https://chat.mistral.ai//favicons/apple-touch-icon.png" alt="Mistral AI icon">
+    </a>
+
+    <a href="https://www.meta.ai/" class="link">
+      <img src="https://static.xx.fbcdn.net/rsrc.php/yw/r/RW7TzFbdkIL.ico" alt="Meta AI icon">
+    </a>
+
+    <a href="https://huggingface.co/chat/" class="link">
+      <img src="https://huggingface.co/chat/huggingchat/apple-touch-icon.png" alt="Hugging Face Chat icon">
+    </a>
+
     <a href="https://www.crunchyroll.com/" class="link">
       <img src="https://www.crunchyroll.com/build/assets/img/favicons/favicon-v2-96x96.png" alt="Crunchyroll icon">
     </a>
@@ -76,7 +128,7 @@
       <svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" fill="none" viewBox="0 0 35 32"><path fill="#13AFF0" fill-rule="evenodd" d="M35 24.354c0-.704-.208-1.36-.565-1.91L22.937 2.525A3.54 3.54 0 0 0 19.813.652h-6.077l17.76 30.666 2.8-4.833c.553-.925.704-1.334.704-2.131m-35-.037 2.956 5.093h.001a3.54 3.54 0 0 0 3.157 1.938h19.624l-4.072-7.03zM10.832 5.621l7.938 13.701H2.893z" clip-rule="evenodd"/></svg>
     </a>
 
-    <a href="https://cara.app" class="link">
+    <a href="https://cara.app/explore" class="link">
       <img src="https://cara.app/favicon.ico" alt="Are.na icon">
     </a>
     
@@ -87,6 +139,21 @@
     <a href="https://www.cosmos.so/" class="link">
       <img src="https://www.cosmos.so/android-chrome-192x192.png" alt="Cosmos icon">
     </a>
+
+    <a href="https://artvee.com/" class="link">
+      <img src="https://mdl.artvee.com/assets/icon-350x350.png" alt="Artvee icon">
+    </a>
+
+    <a href="https://www.rawpixel.com/public-domain/rawpixel-collection" class="link">
+      <img src="https://www.rawpixel.com/android-chrome-512x512.png" alt="Rawpixel icon">
+    </a>
+
+    <a href="https://public.work/" class="link">
+      <div class="link__placeholder-letter">
+        <span>P</span>
+      </div>
+    </a>
+
   </div>
 </body>
 </html>
