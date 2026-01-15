@@ -13,20 +13,14 @@
     body, html {
       margin: 0;
       padding: 0;
-      width: 100%;
-      width: 100%;
+      width: 100svw;
       background-color: rgb(26, 26, 26);
 
       font-family: "Roboto", serif;
       font-optical-sizing: auto;
       font-weight: 400;
       font-style: normal;
-      font-variation-settings:
-        "wdth" 100;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      font-variation-settings: "wdth" 100;
 
       display: flex;
       justify-content: center;
@@ -57,7 +51,10 @@
       padding: 1em;
       transition: background-color 300ms ease;
       text-decoration: none;
-      text-decoration: none;
+      max-width: 6rem;
+      width: 100%;
+      height: 100%;
+      display: flex;
     }
 
     .container > .link:hover,
@@ -69,19 +66,6 @@
     .container > .link > svg {
       height: 96px;
       width: auto;
-    }
-
-    .container > .link .link__placeholder-letter {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 4em;
-
-      width: 100%;
-      height: 96px;
-      width: auto;
-      aspect-ratio: 1/1;
     }
 
     .container > .link .link__placeholder-letter {
@@ -135,7 +119,7 @@
     </a>
 
     <a href="https://www.meta.ai/" class="link">
-      <img src="https://static.xx.fbcdn.net/rsrc.php/yw/r/RW7TzFbdkIL.ico" alt="Meta AI icon">
+      <img src="https://static.xx.fbcdn.net/rsrc.php/v4/yo/r/dw-Xclzmg3s.png" alt="Meta AI icon">
     </a>
 
     <a href="https://huggingface.co/chat/" class="link">
